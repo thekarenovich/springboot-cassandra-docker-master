@@ -1,3 +1,9 @@
+local(1)
+> docker-compose up
+
+local(2)
+> docker ps
+> docker exec -it {CONTAINER ID} bash
 > cqlsh
 > create keyspace mykeyspace with replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
 > describe keyspaces;
