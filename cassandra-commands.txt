@@ -1,0 +1,7 @@
+> cqlsh
+> create keyspace mykeyspace with replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+> describe keyspaces;
+> use mykeyspace;
+> create table Product( id int primary key, name text);
+> describe tables;
+> select * from Product;
